@@ -24,4 +24,4 @@ jobs:
       - name: Get database pass
         env:
           SUPER_SECRET: ${{ secrets.PASSWORD_DATABASE_FAKE }}
-        run: echo "$env:SUPER_SECRET"
+        run: echo "$SUPER_SECRET"
