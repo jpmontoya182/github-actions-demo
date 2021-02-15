@@ -22,4 +22,6 @@ jobs:
           echo Test, and deploy your project.
 
       - name: Get database pass
-        run: echo ${{secrets.PASSWORD_DATABASE_FAKE}}
+        env:
+          SUPER_SECRET: ${{ secrets.PASSWORD_DATABASE_FAKE }}
+        run: echo "$env:SUPER_SECRET"
