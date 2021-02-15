@@ -20,3 +20,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo Test, and deploy your project.
+      - name: Get database pass
+        run: echo ${{PASSWORD_DATABASE_FAKE}}
