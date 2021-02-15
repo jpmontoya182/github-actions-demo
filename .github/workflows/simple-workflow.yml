@@ -21,7 +21,7 @@ jobs:
           echo Add other actions to build,
           echo Test, and deploy your project.
 
-      - name: Get database pass
+      - name: Get database pass from secrets
         env:
           SUPER_SECRET: ${{ secrets.PASSWORD_DATABASE_FAKE }}
         run: echo "$SUPER_SECRET"
